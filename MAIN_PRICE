@@ -1,0 +1,17 @@
+SELECT
+dbo.OBJ_TAB.F01,
+dbo.OBJ_TAB.F155,
+dbo.OBJ_TAB.F29,
+dbo.OBJ_TAB.F22,
+dbo.OBJ_TAB.F16,
+dbo.OBJ_TAB.F17,
+dbo.PRICE_TAB.F30
+/* Select UPC, Brand, Description, Size, Family Code, Category, and Price.
+FROM
+dbo.OBJ_TAB
+/* From main table.
+INNER JOIN dbo.PRICE_TAB ON dbo.OBJ_TAB.F01 = dbo.PRICE_TAB.F01
+/* Create an inner join with price table to fetch price data for each item.
+WHERE
+dbo.OBJ_TAB.F17 BETWEEN 601001 AND 2204999;
+/* Categories for grocery departments only.
