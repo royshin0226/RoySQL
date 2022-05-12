@@ -1,0 +1,13 @@
+SELECT
+dbo.OBJ_TAB.F01,
+dbo.OBJ_TAB.F17,
+dbo.POS_TAB.F04,
+dbo.OBJ_TAB.F22,
+dbo.OBJ_TAB.F29,
+dbo.OBJ_TAB.F155
+/* Select UPC, Category, Sub_Dept, Size, Description, and Brand. 
+FROM
+dbo.OBJ_TAB
+/* From main table.
+INNER JOIN dbo.POS_TAB ON dbo.OBJ_TAB.F01 = dbo.POS_TAB.F01;
+/* Make an inner join with POS table to fetch Sub_Dept data.
