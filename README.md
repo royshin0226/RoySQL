@@ -2,6 +2,7 @@
 - 👀 I’m interested in data mining and analysis.
 - 🌱 I’m currently learning SQL based on MS SQL Studio environment.
 - 💞️ I’m looking to collaborate on building SQL that connect dots between the tables to get useful insights.
+- 😀 I'm working at a retail industry as an IT project manager and database administrator.
 - 📫 Please reach out to me via royshin0226@gmail.com
 
 <!---
