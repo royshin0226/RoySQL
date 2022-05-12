@@ -1,0 +1,10 @@
+UPDATE OBJ_TAB
+/* Want to update a field in main table.
+SET F17 = '2205001'
+/* Wish to set category to a specific one.
+WHERE F01 = '0880946988330';
+/* The category of this particular UPC should be changed.
+
+UPDATE OBJ_TAB
+SET F17 = '1306001'
+WHERE F01 = '0081969702569';
