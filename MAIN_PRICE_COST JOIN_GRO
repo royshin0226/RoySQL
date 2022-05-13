@@ -1,0 +1,23 @@
+SELECT
+dbo.OBJ_TAB.F01 AS UPC,
+dbo.PRICE_TAB.F1007 AS [ACTIVE PRICE],
+dbo.PRICE_TAB.F113 AS [PRICE TYPE],
+dbo.COST_TAB.F38 AS [CASE COST],
+dbo.COST_TAB.F19 AS UNIT,
+dbo.COST_TAB.F1140 AS [EACH COST],
+dbo.PRICE_TAB.F31 AS [FOR],
+dbo.PRICE_TAB.F30 AS [REG PRICE]
+/* Selected UPC, active price, price type, case cost, unit, each cost, for, and regular price.
+
+FROM
+dbo.OBJ_TAB
+INNER JOIN dbo.PRICE_TAB ON dbo.OBJ_TAB.F01 = dbo.PRICE_TAB.F01
+INNER JOIN dbo.COST_TAB ON dbo.OBJ_TAB.F01 = dbo.COST_TAB.F01
+/* Joined price table and cost table to make connection with main table based on the F01 which is the unique identifier.
+
+WHERE
+dbo.OBJ_TAB.F17 between 601001 AND 2204999
+/* Fetched grocery data based on the category.
+
+ORDER BY F17;
+/* Sorted the dataset by category.
